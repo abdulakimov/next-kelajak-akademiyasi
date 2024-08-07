@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <div className='overflow-hidden'>
-      <nav className='w-full p-8 flex flex-row justify-between items-center border-b-2 backdrop-blur-sm fixed z-10'>
+      <nav className='w-full p-6 flex flex-row justify-between items-center border-b-2 backdrop-blur-sm fixed z-10'>
         <h1 className='cursor-pointer text-xl font-bold'>Kelajak</h1>
         <ul className='flex flex-row gap-4 items-center max-sm:hidden'>
           <li className='cursor-pointer'>Uy</li>
