@@ -18,7 +18,9 @@ function Navbar() {
         <h1 className='cursor-pointer text-xl font-bold'>Kelajak</h1>
         <ul className='flex flex-row gap-4 items-center max-sm:hidden'>
           <li className='cursor-pointer'>Uy</li>
-          <li className='cursor-pointer'>Ma'lumot</li>
+          <li className='cursor-pointer text-lg'>Kurslar</li>
+          <li className='cursor-pointer text-lg'>Loyihalar</li>
+          <li className='cursor-pointer text-lg'>Xizmalar</li>
           <li className='cursor-pointer'>Galereya</li>
         </ul>
         <Button variant="default" className='max-sm:hidden'>
@@ -33,7 +35,9 @@ function Navbar() {
       <div className={`sm:hidden fixed top-0 left-0 w-full border-b-4 pt-32 h-screen gap-20 backdrop-blur-md flex flex-col items-center -translate-x-full transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
         <ul className='flex flex-col gap-8 items-center '>
           <li className='cursor-pointer text-lg'>Uy</li>
-          <li className='cursor-pointer text-lg'>Ma'lumot</li>
+          <li className='cursor-pointer text-lg'>Kurslar</li>
+          <li className='cursor-pointer text-lg'>Loyihalar</li>
+          <li className='cursor-pointer text-lg'>Xizmalar</li>
           <li className='cursor-pointer text-lg'>Galereya</li>
         </ul>
         <Button variant="default" className='md:flex'>
