@@ -2,10 +2,10 @@
 
 import React, { use } from 'react'
 import { TextGenerateEffect } from './text-generate-effect';
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { globeConfig, sampleArcs } from '@/data/globeConfig';
 import { Button } from './ui/button';
+import { FaArrowRight } from "react-icons/fa";
 
 const World = dynamic(() => import("./globe").then((m) => m.World), {
   ssr: false,
@@ -23,8 +23,9 @@ function Hero() {
         <div className=''>
           <h1 className='text-7xl max-sm:text-5xl max-sm:pt-[10vh] font-bold'>Kelajak Akademiyasi</h1>
           <TextGenerateEffect className="relative max-sm:text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 sm:py-8" duration={0.5} filter={true} words={words} />
-          <Button variant="default" className='mt-4 z-20 relative sm:text-lg'>
-            Batafsil
+          <Button variant="default" className='mt-4 z-20 cursor-pointer relative'>
+            <p>Batafsil</p>
+            <FaArrowRight className='ml-3' />
           </Button>
         </div>
 
