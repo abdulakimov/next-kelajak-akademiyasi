@@ -20,7 +20,7 @@ function Navbar() {
           <li className='cursor-pointer text-lg'>Kurslar</li>
           <li className='cursor-pointer text-lg'>Loyihalar</li>
           <li className='cursor-pointer text-lg'>Xizmalar</li>
-          <li className='cursor-pointer'>Galereya</li>
+          <li className='cursor-pointer text-lg'>Galereya</li>
         </ul>
         <Button variant="default" className='max-sm:hidden'>
           <MdOutlinePhoneInTalk size={15} className='mr-2' />
