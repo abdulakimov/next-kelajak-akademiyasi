@@ -63,7 +63,15 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.gradient-text {
+  background: linear-gradient(160deg, #b8b8b8, #000000);
+  /* Adjust the colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

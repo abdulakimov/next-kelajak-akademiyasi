@@ -1,5 +1,9 @@
-import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
+import Courses from "@/pages/courses";
+import Hero from "@/pages/hero";
+import Navbar from "@/pages/navbar";
+import Projects from "@/pages/projects";
+import Gallery from "@/pages/gallery";
+
 
 
 export default function Home() {
@@ -7,6 +11,9 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <Courses />
+      <Projects />
+      <Gallery />
     </main>
   );
 }

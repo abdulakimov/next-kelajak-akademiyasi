@@ -1,13 +1,13 @@
 'use client'
 
 import React, { use } from 'react'
-import { TextGenerateEffect } from './text-generate-effect';
 import dynamic from "next/dynamic";
 import { globeConfig, sampleArcs } from '@/data/globeConfig';
-import { Button } from './ui/button';
 import { FaArrowRight } from "react-icons/fa";
+import { TextGenerateEffect } from '@/components/text-generate-effect';
+import { Button } from '@/components/ui/button';
 
-const World = dynamic(() => import("./globe").then((m) => m.World), {
+const World = dynamic(() => import("../components/globe").then((m) => m.World), {
   ssr: false,
 });
 
